@@ -1,12 +1,9 @@
-import datetime
 import os.path
 import datetime
-from random import random
 
 import requests
 import yaml
 from bs4 import BeautifulSoup
-from google_images_search import GoogleImagesSearch
 from linkedin_api import Linkedin
 
 

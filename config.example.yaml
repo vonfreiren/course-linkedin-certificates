@@ -1,0 +1,10 @@
+path: '/Users/javier/Desktop/mp3'
+path_delete_mp4: '/Users/javier/Desktop/mp3/**'
+
+
+user: 'myemail'
+password: 'mypassword'
+
+save_path_local: '/Users/javier/IdeaProjects/vonfreiren.github.io/_courses'
+
+username: 'linkedinusername'
