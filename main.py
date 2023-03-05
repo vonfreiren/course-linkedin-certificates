@@ -6,6 +6,7 @@ import yaml
 from bs4 import BeautifulSoup
 from linkedin_api import Linkedin
 
+from linkedin_api.utils.helpers import get_id_from_urn
 
 with open('config.yaml') as f:
     data = yaml.load(f, Loader=yaml.FullLoader)
@@ -46,8 +47,7 @@ def retrieve_cousera_logo(certification):
 def calculate_values():
 
     api = Linkedin(user, password)
-
-    certifications = api.get_certifications(username)
+    certifications = api.get_profile_certifications(username)
     for certification in certifications:
         if certification['displaySource'] == 'coursera.org':
 
